@@ -6,7 +6,7 @@
 
 /* Body */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f4f4f9;
   color: #333;
   display: flex;
@@ -48,7 +48,8 @@ h1 {
 }
 
 /* About Section */
-#about {
+#about,
+.shoutout {
   background-color: white;
   width: 90%;
   max-width: 800px;
@@ -126,6 +127,7 @@ footer {
   text-align: center;
   position: relative;
   bottom: 0;
+  margin-top: 20px;
 }
 
 /* Media Queries for Responsiveness */
@@ -166,6 +168,32 @@ footer {
 
   p {
     font-size: 1em;
+  }
+
+  .goal-container {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .progress {
+    height: 100%;
+    width: 0%; /* Updated dynamically */
+    background: #4caf50;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    transition: width 0.5s ease-in-out;
   }
 
   .donation-link {
